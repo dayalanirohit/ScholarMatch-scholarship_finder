@@ -1,0 +1,134 @@
+.my-scholarships-container {
+  width: 100%;
+  padding: 40px 5%;
+  background-color: var(--color-background); /* Was a gradient */
+  box-sizing: border-box;
+  min-height: calc(100vh - 70px);
+}
+
+.my-scholarships-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: var(--color-primary); /* Was #1a1a1a */
+  text-align: center;
+}
+
+.my-scholarships-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+.my-scholarship-card {
+  border-radius: 16px;
+  padding: 20px;
+  background: var(--color-surface); /* Was white */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid var(--color-accent); /* Was #007bff */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-scholarship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.15);
+}
+
+.my-scholarship-card strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-primary); /* Was #222 */
+}
+
+.my-scholarship-card p {
+  margin: 4px 0;
+  color: var(--color-secondary); /* Was #555 */
+}
+
+.my-scholarship-card a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.my-scholarship-card a:hover {
+    text-decoration: underline;
+}
+
+.my-scholarship-empty {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  color: var(--color-secondary); /* Was #888 */
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.filters input {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid var(--color-border); /* Was #ccc */
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.filters input:focus {
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal-content h2 {
+  color: var(--color-primary); /* Was #d9534f */
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: var(--color-secondary); /* Was #1e0403 */
+  margin-bottom: 1.5rem;
+}
+
+.modal-content .btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.modal-content .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.modal-content .btn-secondary {
+    background-color: var(--color-border);
+    color: var(--color-primary);
+}
