@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-surface); /* Was #f4f4f4 */
+  border-bottom: 1px solid var(--color-border); /* Was #ddd */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar__logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-accent); /* Was #007acc */
+  text-decoration: none;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__links li a {
+  text-decoration: none;
+  color: var(--color-primary); /* Was #333 */
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar__links li a:hover {
+    color: var(--color-accent);
+}
+
+.navbar__links li.active a {
+  font-weight: bold;
+  color: var(--color-accent); /* Was #007acc */
+}
+
+.navbar__auth {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar__welcome {
+  color: var(--color-secondary); /* Was #222 */
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+/* General Button Styling */
+.navbar .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Primary button style (for Sign Up) */
+.navbar .btn.signup {
+  background-color: var(--color-accent); /* Was #007acc */
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+.navbar .btn.signup:hover {
+    filter: brightness(110%);
+}
+
+/* Secondary/outline button style (for Login & Logout) */
+.navbar .btn.login, .navbar .btn.logout {
+  background-color: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.navbar .btn.login:hover, .navbar .btn.logout:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* To make the logout button look like a .btn */
+.navbar button.logout {
+    font-size: inherit; /* ensures font size matches links */
+    cursor: pointer;
+}

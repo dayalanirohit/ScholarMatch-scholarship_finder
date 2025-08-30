@@ -1,0 +1,101 @@
+/* Container */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-surface); /* Was a gradient */
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--color-primary); /* Was #212529 */
+  font-weight: 700;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-secondary); /* Was #495057 */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border); /* Was #ced4da */
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-accent); /* Was #0d6efd */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--color-accent); /* Was #0d6efd */
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  filter: brightness(110%); /* Was #0848c3 */
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+}
+
+/* Messages */
+.error-message {
+  color: var(--color-error); /* Was #d6336c */
+}
+.success-message {
+  color: var(--color-success); /* Was #198754 */
+}
+
+/* Link for Signup */
+.login-container p {
+  margin-top: 1.5rem;
+  color: var(--color-secondary); /* Was #6c757d */
+}
+
+.login-container a {
+  color: var(--color-accent); /* Was #0d6efd */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
