@@ -14,7 +14,7 @@ const app = express();
 // --- CHANGE HERE ---
 // Configure CORS for production
 const corsOptions = {
-  origin: 'https://your-frontend-app-name.onrender.com', // IMPORTANT: You will change this later
+  origin: 'https://scholarmatch-app.onrender.com', // IMPORTANT: You will change this later
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -53,3 +53,4 @@ cron.schedule('0 0 * * *', async () => {
         console.error('Scheduled scraper failed:', err);
       }
 });
+
