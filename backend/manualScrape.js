@@ -1,7 +1,8 @@
 // backend/manualScrape.js
 const mongoose = require('mongoose');
 const Scholarship = require('./models/scholarship');
-const scrapeScholarshipsCom = require('./scrapers/scholarshipScraper'); // Make sure this filename is correct
+const scrapeScholarshipsCom = require('./scrapers/scholarshipScraper'); 
+// Make sure this filename is correct
 require('dotenv').config();
 
 const runScraper = async () => {

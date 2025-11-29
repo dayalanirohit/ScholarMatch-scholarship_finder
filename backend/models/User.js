@@ -1,20 +1,18 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    trim: true
-  },
-
-  email: {
+   email: {
     type: String,
     required: true,
     unique: true,
     lowercase: true,
     trim: true
   },
-
+  name: {
+    type: String,
+    required: true,
+    trim: true
+  },
   password: {
     type: String,
     required: true
@@ -29,6 +27,7 @@ const userSchema = new mongoose.Schema({
       message: 'GPA must be a valid number'
     }
   },
+
 
   amount: {
     type: Number
@@ -50,5 +49,6 @@ const userSchema = new mongoose.Schema({
   }
 
 }, { timestamps: true });
+
 
 module.exports = mongoose.model('User', userSchema);
