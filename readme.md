@@ -4,15 +4,6 @@
   <h3 align="center">ScholarMatch</h3>
   <p align="center">
     A user-friendly platform to discover and track scholarships from multiple sources in one place. Simplify your scholarship search with personalized filters and timely alerts.
-    <br />
-    <a href="https://github.com/ArshChand/Scholarship_Finder"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://scholarship-finder-frontend-vm6f.onrender.com/login">View Demo</a>
-    ·
-    <a href="https://github.com/ArshChand/Scholarship_Finder/issues/new?template=bug_report.md&labels=bug">Report Bug</a>
-    ·
-    <a href="https://github.com/ArshChand/Scholarship_Finder/issues/new?template=feature_request.md&labels=enhancement">Request Feature</a>
   </p>
 </div>
 
