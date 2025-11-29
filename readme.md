@@ -16,12 +16,7 @@
   </p>
 </div>
 
----
-## Developer Contacts
-
-**Bhavya Bharti** - [GitHub](https://github.com/bhavyabhart)
-
-**Arsh Chand** - [GitHub](https://github.com/ArshChand)  
+ 
 
 ---
 
